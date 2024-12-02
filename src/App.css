@@ -1,0 +1,11 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url(./image/abstract-finance-currency-money.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+}

@@ -1,0 +1,127 @@
+/* Currency Div Styling */
+.currency-div {
+    background: linear-gradient(135deg, #1c1c3c, #3c3c5c);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+/* Title Styling */
+.currency-div h2 {
+    font-size: 28px;
+    margin: 0 0 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    letter-spacing: 2px;
+    border-radius: 7px;
+    padding: 5px 0;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Input Fields */
+.amount, .result {
+    width: calc(50% - 20px);
+    padding: 12px;
+    margin: 10px 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    transition: border 0.3s;
+}
+
+.amount:focus, .result:focus {
+    border: 2px solid #ff7e5f;
+    outline: none;
+}
+
+/* Select Dropdowns */
+select {
+    width: calc(50% - 20px);
+    padding: 12px;
+    margin: 10px 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    text-align: center;
+    transition: border 0.3s, background 0.3s;
+}
+
+select:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+select:focus {
+    border: 2px solid #ff7e5f;
+}
+
+/* Option Styling */
+option {
+    color: #000;
+    background-color: #fff;
+}
+
+/* Arrow Icon */
+svg {
+    font-size: 30px;
+    margin: 20px 0;
+    color: #ff7e5f;
+}
+
+/* Convert Button */
+.exchange-button {
+    padding: 12px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 126, 95, 0.4);
+}
+
+.exchange-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #feb47b, #ff7e5f);
+    box-shadow: 0 10px 25px rgba(255, 126, 95, 0.6);
+}
+
+.exchange-button:active {
+    transform: scale(1);
+    box-shadow: 0 3px 10px rgba(255, 126, 95, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .currency-div {
+        padding: 20px;
+    }
+
+    .amount, .result, select {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    svg {
+        font-size: 25px;
+    }
+
+    .exchange-button {
+        width: 100%;
+    }
+}
